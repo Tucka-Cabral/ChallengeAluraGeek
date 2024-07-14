@@ -1,0 +1,191 @@
+
+  :root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-um: #5300C8; 
+   --cor-dois: #5D04D9;
+   --cor-tres: #03318C;
+   --cor-de-fundo: #fff;
+   --cor-link: #000;
+   --cor-hover: #FFF;
+
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul, li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-tres);
+    padding: 20px;
+    height: 96px;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.bloco__produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px 60px;
+    width: 60%;    
+}
+
+.bloco__produtos__cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 650px;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.227);
+    
+}
+
+.bloco__produtos__cards__card__detalhe{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: var(--cor-tres);
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 40px 60px;
+    gap: 40px;
+    width: 40%;
+    text-align: center;
+
+}
+
+.formulario__campo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 40px;
+    text-align: center;
+    
+}
+
+.campo__escrita{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    background: var(--cor-de-fundo);
+    padding: 8px 24px;
+    width: 100%;
+    border: 3px solid var(--cor-tres);
+    gap:40px;
+}
+
+.formulario__botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px;
+    width: 90%;
+}
+
+.formulario__botao__guardar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    background: var(--cor-tres);
+    padding: 8px 24px;
+    width: 45%;
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    border: 3px solid var(--cor-tres);    
+    margin-top: auto;    
+}
+
+.formulario__botao__guardar:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-dois)
+}
+
+.formulario__botao__limpar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    background: var(--cor-tres);
+    padding: 8px 24px;
+    width: 45%;
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    border: 3px solid var(--cor-tres);
+           
+}
+
+.formulario__botao__limpar:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-dois);
+}
+
+
+footer{
+    background-color: var(--cor-tres);
+    height: 100%;
+    width: 100%;
+}
+
+.footer__rodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-de-fundo);
+}
+
+.footer__rodape__titulo{
+    font-weight: 400;
+    color: var(--cor-de-fundo);
+}
+
+.footer__rodape__subtitulo{
+    font-weight: 200;
+    color: var(--cor-de-fundo);
+}
+
