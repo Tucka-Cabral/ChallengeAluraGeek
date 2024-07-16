@@ -25,27 +25,20 @@
     <main>
         <section class="bloco__produtos">
             <h1 class="bloco__produtos__titulo"> Meus Produtos</h1>
+            
             <ul class="bloco__produtos__cards" alt="Produtos" data-lista>
-                <li class="bloco__produtos__cards__card">
-                <div class="bloco__produtos__cards__card__detalhe">
-                    <!-- <img src="${imagem}" alt="Imagem do Produto">
-                    <h3> ${nome} </h3>
-                    <p> ${preco} </p> -->
-                </div>
-                </li>
-
             </ul>
         </section>
         
         <section class="formulario">
             <h2 class="principal__titulo">Adicionar <br>produto :</h2>
 
-            <form class="principal__formulario" id="formulario" target="_blank">
+            <form class="principal__formulario" id="formulario" target="_blank" data-formulario>
                 
                 <div class="formulario__campo">
-                    <input name="nome" id="nome" type="text" placeholder="nome..." class="campo__escrita" required />
-                    <input name="valor" id="valor" type="number" placeholder="valor..." class="campo__escrita" required />
-                    <input name="imagem" id="imagem" type="image" placeholder="imagem..." class="campo__escrita" />
+                    <input name="nome" id="nome" type="text" placeholder="nome..." class="campo__escrita" required data-nome />
+                    <input name="valor" id="valor" type="number" placeholder="valor..." class="campo__escrita" required data-valor/>
+                    <input name="imagem" id="imagem" placeholder="imagem..." class="campo__escrita" data-imagem/>
                 </div>
                 <div class="formulario__botoes">
                     <input type="submit" value="Guardar" class="formulario__botao__guardar" id="Guardar">                
@@ -71,8 +64,10 @@
        <a href="https://www.linkedin.com/in/thais-cabral1"><img src="assets/linkedin.png"></a></li>
 -->
 
-    <!-- Script Linkado do seu documento de JavaScript -->
+    <!-- Script Linkado do seu documento de JavaScript --> 
+    <script src="scripts/conectaApi.js" type="module"></script>
     <script src="scripts/mostrarCards.js" type="module"></script>
+    <script src="scripts/criacards.js" type="module"></script>
 
 </body>
 

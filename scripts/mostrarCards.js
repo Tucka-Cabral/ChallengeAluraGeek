@@ -4,7 +4,7 @@ const lista = document.querySelector("[data-lista]");
 
 function constroiCard(nome, preco, imagem) {
     const card = document.createElement("li");
-    card.className = "bloco__produtos__card";
+    card.className = "bloco__produtos__cards__card";
     card.innerHTML = `<div class="bloco__produtos__cards__card__detalhe">
                     <img src="${imagem}" alt="Imagem do Produto">
                     <h3> ${nome} </h3>
